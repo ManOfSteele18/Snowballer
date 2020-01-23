@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- These would be used to link external css and js files
+		<link rel="stylesheet" href="styles/style.css"> -->
+		<script src="js/IndexedDB.js"></script>
+		<script src="js/Snowballer.js"></script>
+		<title>Snowballer</title>
+	</head>
+	<!-- This is the main page of the app, it's what the user sees when they open it.
+		 It should provide summary of the user's debt profile including things such
+		 as total debt, individual sources of debt with relevant information such as 
+		 loans, credit cards, etc ordered smallest to largest. There should be links 
+		 to pages to manaage/add debt sources, an explanation of what the snowball 
+		 method is and how it works, and a page that manages alerts -->
+	<body>
+		<header>
+		<h1>Snowballer</h1>
+		<h2>Start with the small wins and get to the big ones faster!</h2>
+		<nav>
+			<ul>
+			<li>Summary</li>
+			<li>Manage Debt</li>
+			<li>Alerts</li>
+			</ul>
+		</nav>
+		</header>
+		<main>
+			<h1>Debt Profile</h1>
+			<section id="totalDebt"></section>
+			<section id="debtList"></section>
+		</main>
+		<footer>
+			<p>Created by Paul Steele in January, 2020</p>
+		</footer>
+	</body>
+</html>

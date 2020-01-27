@@ -6,15 +6,11 @@
 		<!-- These would be used to link external css and js files
 		<link rel="stylesheet" href="styles/style.css"> -->
 		<script src="js/IndexedDB.js"></script>
-		<script src="js/Snowballer.js"></script>
-		<title>Snowballer</title>
+		<title>Snowballer Manage Debt</title>
 	</head>
-	<!-- This is the main page of the app, it's what the user sees when they open it.
-		 It should provide summary of the user's debt profile including things such
-		 as total debt, individual sources of debt with relevant information such as 
-		 loans, credit cards, etc ordered smallest to largest. There should be links 
-		 to pages to manaage/add debt sources, an explanation of what the snowball 
-		 method is and how it works, and a page that manages alerts -->
+	<!-- This is the manage debt page of the app. It is where users will create new
+		 debt sources by using a form. Form values will be validated, and entries will
+		 be stored using indexedDB -->
 	<body>
 		<header>
 		<h1>Snowballer</h1>
@@ -28,9 +24,8 @@
 		</nav>
 		</header>
 		<main>
-			<h1>Debt Profile</h1>
-			<section id="totalDebt"></section>
-			<section id="debtList"></section>
+			<h1>Add Debt Source</h1>
+			
 		</main>
 		<footer>
 			<p>Created by Paul Steele in January, 2020</p>

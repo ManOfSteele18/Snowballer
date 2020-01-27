@@ -24,7 +24,7 @@ function getListFromCursor(objStore, trCompleteCallback) {
 		let cursor = evt.target.result;
     
 		if (cursor) {
-			cursorItemList.push(cursor.value);
+			cursorItemList.push(JSON.parse(cursor.value));
 			cursor.continue();
 		}
 	};

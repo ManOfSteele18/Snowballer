@@ -4,33 +4,37 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- These would be used to link external css and js files
-		<link rel="stylesheet" href="styles/style.css"> -->
-		<script src="js/IndexedDB.js"></script>
-		<script src="js/Snowballer.js"></script>
+		<link rel="stylesheet" href="styles/style.css">
+		<script src="js/quadratic.js"></script> -->
 		<title>Snowballer</title>
 	</head>
 	<!-- This is the main page of the app, it's what the user sees when they open it.
-		 It should provide summary of the user's debt profile including things such
-		 as total debt, individual sources of debt with relevant information such as 
-		 loans, credit cards, etc ordered smallest to largest. There should be links 
-		 to pages to manaage/add debt sources, an explanation of what the snowball 
-		 method is and how it works, and a page that manages alerts -->
+         It should provide summary of the user's debt profile including things such
+         as total debt, individual sources of debt with relevant information such as 
+         loans, credit cards, etc ordered smallest to largest. -->
 	<body>
 		<header>
-		<h1>Snowballer</h1>
-		<h2>Start with the small wins and get to the big ones faster!</h2>
-		<nav>
-			<ul>
-				<li>Summary</li>
-				<li><a href="snowballer-manage-debt.html">Add Debt Source</a></li>
-				<li>Alerts</li>
-			</ul>
-		</nav>
+			<h1>Snowballer</h1>
+			<p>Start with the small wins and get to the big ones faster!</p>
+			<nav>
+				<ul>
+					<li><a href='#'>Summary</a></li>
+					<li><a href='#'>Alerts</a></li>
+				</ul>
+			</nav>
 		</header>
-		<main>
-			<h1>Debt Profile</h1>
+		<aside>
+			<header>
+				<h1 class='sectionHeader'>Debt Summary</h1>
+			</header>
 			<section id="totalDebt"></section>
+		</aside>
+		<main>
+			<header>
+				<h1 class='sectionHeader'>Accounts</h1>
+			</header>
 			<section id="debtList"></section>
+				<div id='addButton'>+</div>
 		</main>
 		<footer>
 			<p>Created by Paul Steele in January, 2020</p>
